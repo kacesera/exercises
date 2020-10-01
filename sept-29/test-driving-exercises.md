@@ -25,7 +25,7 @@ so that I can remember peoples' names as a student."
 ```
 >show_names
 => Robert
-=> Sir Duckins
+   Sir Duckins
 ```
 
 ## Exercise 2:
@@ -102,7 +102,7 @@ end
 
 >show_names
 => Robert
-=> Sir Duckins
+   Sir Duckins
 ```
 
 ```
