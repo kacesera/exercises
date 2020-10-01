@@ -2,7 +2,7 @@
 
 ## Exercise 1:
 
-["Imagine how to use it" challenge]
+***["Imagine how to use it" challenge]***
 
 "An IRB application that stores the names of people I meet, 
 so that I can remember peoples' names as a student."
@@ -30,7 +30,7 @@ so that I can remember peoples' names as a student."
 
 ## Exercise 2:
 
-["Imagine how to use it" challenge]
+***["Imagine how to use it" challenge]***
 
 "An IRB application that stores my motivation ratings, 
 and I want to see the average of my last 3 ratings, 
@@ -78,7 +78,7 @@ so that I can understand my recent motivation as a student."
 
 ## Exercise 3:
 
-Use exercise 1 to write tests
+***Use exercise 1 to write tests***
 
 ```
 >save_name("Robert")
