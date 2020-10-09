@@ -1,25 +1,24 @@
 require "exercise_2"
 
 describe Diary do
+  let(:entry_double) { 
+    double :entry, 
+    title: "TITLE" 
+  }
+  let(:entry_class_double) {
+    double :entry_class, 
+    new: entry_double
+  }
 
   it "adds new entries" do
-    entry_double = double :entry
-    entry_class_double = double :entry_class, new: entry_double
-
     diary = Diary.new(entry_class_double)
     diary.add("title", "body")
-
-    expect(diary.entries).to include entry_double
+    expect(diary.all_entries).to include entry_double
   end
 
   it "indexes titles with a newline" do
-    entry_double = double :entry
-    entry_class_double = double :entry_class, new: entry_double
-
     diary = Diary.new(entry_class_double)
     3.times { diary.add("title", "body") }
-
-    allow(entry_double).to receive(:title) {"TITLE"}
     expect(diary.index).to eq("TITLE\nTITLE\nTITLE")
   end
 end

@@ -49,7 +49,9 @@ class Diary
     titles.join("\n")
   end
 
-  attr_reader :entries
+  def all_entries
+    @entries
+  end
 end
 
 class Entry
@@ -58,5 +60,11 @@ class Entry
     @body = body
   end
 
-  attr_reader :title, :body
+  def title
+    @title
+  end
+
+  def body
+    @body
+  end
 end
