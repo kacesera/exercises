@@ -8,6 +8,4 @@ notes = NotesList.new(socket)
 
 notes.try_load_notes
 
-
-
 socket.close
